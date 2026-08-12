@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.hero {
+    background-image: linear-gradient(200deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../img/christian-DS9Xc7AWmwQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.hero-txt {
+    color: white;
+    align-items: center;
+    padding-top: 8.5%;
+    padding-left: 40%;
+    letter-spacing: 7px;
+    font-size: 500;
+}
+
+.hero-header p {
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    position: sticky;
+    top: 0;
+
+}
+
+.navbar::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    height: 1px;
+}
+
+.logo {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    padding-left: 30px;
+    font-size: 0.9vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* 1. Move horizontal padding to the LI container */
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0 30px; /* Add your left/right spacing here instead */
+}
+
+/* 2. Keep the A tag tight around the text */
+.navbar ul li a {
+    font-size: 0.9vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    align-items: center;
+    align-content: center;
+    font-size: 1vw;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+    position: relative;
+    display: inline-block;
+    padding: 5px 30px; /* ONLY vertical padding here, ZERO horizontal padding */
+    text-decoration: none;
+}
+
+/* 3. The line will now center perfectly */
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    width: 0;
+
+    /* Critical positioning properties */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: width 0.4s ease;
+}
+
+.navbar ul li a:hover::after {
+    width: 60%;
+}
+
+.cta1 {
+    position: absolute;
+    right: 2%;
+    padding: 20px;
+    border-radius: 30px;
+    color: rgb(7, 7, 7);
+    background-color: white;
+    border: none;
+    font-size: 0.8vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+}
+
+.cta1:hover{
+ cursor: pointer;
+}
+
+.cta1 h4 {
+    font-style: normal;
+}
+
+/* totop */
+.totop{
+            background-color: rgb(8, 8, 8);
+            color: rgb(250, 249, 249);
+            border-radius: 50% 50% 0% 0%;
+            padding: 20px;
+            position: fixed;
+            bottom: 0%;
+            right: 0%;
+            cursor: pointer;
+            opacity: 0;
+            scroll-behavior: smooth;
+            transition: 0.5s;
+        }
+        .totop.active{
+            opacity: 1;
+        }
+
+/* ENDS HERE */
+
+/* SERVICES GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 64px 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 28px 24px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.service-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* CTA SECTION */
+.services-cta {
+  background: #0f1420;
+  color: #fff;
+  text-align: center;
+  padding: 64px 24px;
+}
+
+.services-cta h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.services-cta p {
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #0f1420;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+  .nav-links {
+    display: none; /* you'll want a hamburger menu here eventually */
+  }
+  .hero-overlay h1 {
+    font-size: 30px;
+  }
+  .services-grid {
+    padding: 40px 20px;
+  }
+}

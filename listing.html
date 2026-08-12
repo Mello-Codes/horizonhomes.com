@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/listing.css">
+    <title>HorizonHomes-Listing</title>
+</head>
+
+<body>
+    <span>
+        <i class="totop" id="totop">top</i>
+    </span>
+
+    <section class="hero">
+        <header>
+            <nav class="navbar">
+                <h4 class="logo">HORIZON <br>
+                    HOMES
+                </h4>
+                <ul class="nav-links">
+                    <li><a href="./homepage.html">Home</a></li>
+                    <li><a href="./listing.html">Listings </a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <div class="indicator"></div>
+                </ul>
+                <button class="cta1">
+                    <h4>Find Your Property</h4>
+                </button>
+            </nav>
+        </header>
+        <div>
+            <h2 class="hero-txt">Browse Properties</h2>
+        </div>
+    </section>
+
+    <!-- SIDE BAR -->
+    <div class="listings-page">
+        <aside class="filter-sidebar">
+            <h3>Filters</h3>
+
+            <div class="filter-group">
+                <label for="city">City</label>
+                <select id="city">
+                    <option value="">All cities</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="abuja">Abuja</option>
+                </select>
+                <div class="filter-group" id="lga-group" style="display: none;">
+                    <label for="lga">Local Government Area</label>
+                    <select id="lga">
+                        <option value="">All areas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label for="status">Status</label>
+                <select name="" id="status">
+                    <option value="">For Rent</option>
+                    <option value="">For Sale</option>
+                    <option value="">All</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="property">Property Type</label>
+                <select name="" id="property">
+                    <option value="">Apartment</option>
+                    <option value="">Duplex</option>
+                    <option value="">Bungalow</option>
+                    <option value=""></option>
+                </select>
+            </div>
+
+
+            <div class="filter-group">
+                <label for="price">Max Price</label>
+                <input type="range" id="price" min="0" max="100000000" step="500000">
+                <span id="price-output">₦50,000,000</span>
+            </div>
+
+            <button class="apply-btn">Apply Filters</button>
+        </aside>
+        <main class="listings-grid">
+
+            <div class="property-card">
+                <div class="card-image"><img src="./img/naomi-hebert-bI1Su2hK084-unsplash.jpg" alt="Property photo"></div><
+                <span class="tag tag-rent">For Rent</span>
+                <h4>3-Bed Duplex, Lekki Phase 1</h4>
+                <p class="location">Lagos · 3 bed · 3 bath</p>
+                <p class="price">₦2,500,000/yr</p>
+            </div>
+
+            <div class="property-card">
+                <div class="card-image"><img src="./img/abdul-raheem-kannath-xZ9QVT2-pNc-unsplash.jpg" alt=""></div>
+                <span class="tag tag-sale">For Sale</span>
+                <h4>4-Bed Detached Duplex, Maitama</h4>
+                <p class="location">Abuja · 4 bed · 4 bath</p>
+                <p class="price">₦120,000,000</p>
+            </div>
+
+            <div class="property-card">
+                <div class="card-image"><img src="./img/christian-DS9Xc7AWmwQ-unsplash.jpg" alt=""></div>
+                <span class="tag tag-rent">For Rent</span>
+                <h4>2-Bed Apartment, Yaba</h4>
+                <p class="location">Lagos · 2 bed · 2 bath</p>
+                <p class="price">₦1,800,000/yr</p>
+            </div>
+
+            <div class="property-card">
+                <div class="card-image"><img src="./img/lisa-anna-jOwMUVF8g-4-unsplash.jpg" alt=""></div>
+                <span class="tag tag-sale">For Sale</span>
+                <h4>Land, Guzape District</h4>
+                <p class="location">Abuja · 900 sqm</p>
+                <p class="price">₦45,000,000</p>
+            </div>
+
+            <div class="property-card">
+                <div class="card-image"><img src="./img/naomi-hebert-bI1Su2hK084-unsplash.jpg" alt=""></div>
+                <span class="tag tag-rent">For Rent</span>
+                <h4>Studio Apartment, Victoria Island</h4>
+                <p class="location">Lagos · 1 bed · 1 bath</p>
+                <p class="price">₦3,200,000/yr</p>
+            </div>
+
+            <div class="property-card">
+                <div class="card-image"><img src="./img/abdul-raheem-kannath-xZ9QVT2-pNc-unsplash.jpg" alt=""></div>
+                <span class="tag tag-sale">For Sale</span>
+                <h4>3-Bed Bungalow, Gwarinpa</h4>
+                <p class="location">Abuja · 3 bed · 2 bath</p>
+                <p class="price">₦65,000,000</p>
+            </div>
+
+            <div class="property-card">
+                <div class="card-image"><img src="./img/christian-DS9Xc7AWmwQ-unsplash.jpg" alt=""></div>
+                <span class="tag tag-rent">For Rent</span>
+                <h4>2-Bed Flat, Surulere</h4>
+                <p class="location">Lagos · 2 bed · 2 bath</p>
+                <p class="price">₦1,200,000/yr</p>
+            </div>
+
+            <div class="property-card">
+                <div class="card-image"><img src="./img/lisa-anna-jOwMUVF8g-4-unsplash.jpg" alt=""></div>
+                <span class="tag tag-sale">For Sale</span>
+                <h4>5-Bed Mansion, Asokoro</h4>
+                <p class="location">Abuja · 5 bed · 5 bath</p>
+                <p class="price">₦250,000,000</p>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="./js/listing.js"></script>
+</body>
+
+</html>
