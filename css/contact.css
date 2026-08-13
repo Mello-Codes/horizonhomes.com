@@ -1,49 +1,18 @@
 
-body{
-    padding: 0;
+  *{
     margin: 0;
+    padding: 0;
 }
 
-
-/* HERO SECTION */
-.hero {
-    background-image: linear-gradient(200deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../img/christian-DS9Xc7AWmwQ-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    width: 100%;
-}
-
-.hero-txt {
-    color: white;
-    align-items: center;
-    padding-top: 7%;
-    padding-left: 42%;
-    letter-spacing: 7px;
-    font-size: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-.hero-header p {
-    color: white;
-    text-align: center;
-    letter-spacing: 2px;
-    margin-top: 15px;
-}
-/* ENDS HERE */
-
-
-/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 25px;
+    padding: 35px;
     position: sticky;
     top: 0;
-
+    z-index: 999;
+   
 }
 
 .navbar::after {
@@ -60,8 +29,8 @@ body{
     position: absolute;
     left: 0;
     top: 0;
-    padding-top: 17px;
-    padding-left: 15px;
+    padding-top: 40px;
+    padding-left: 30px;
     font-size: 0.9vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -91,7 +60,7 @@ body{
     padding-left: 40px;
     position: relative;
     display: inline-block;
-    padding: 3px 30px; /* ONLY vertical padding here, ZERO horizontal padding */
+    padding: 5px 30px; /* ONLY vertical padding here, ZERO horizontal padding */
     text-decoration: none;
 }
 
@@ -107,7 +76,7 @@ body{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-
+    z-index: 10;
     transition: width 0.4s ease;
 }
 
@@ -118,14 +87,14 @@ body{
 .cta1 {
     position: absolute;
     right: 2%;
-   padding: 0px 10px;
+    padding: 20px;
     border-radius: 30px;
     color: rgb(7, 7, 7);
     background-color: white;
     border: none;
     font-size: 0.8vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
+    margin: 10px;
 }
 
 .cta1:hover{
@@ -134,147 +103,40 @@ body{
 
 .cta1 h4 {
     font-style: normal;
-   
 }
-/* NAV ENDS HERE */
+/* NAVBAR ENDS HERE */
 
 
-  body {
-    background: #fafafa;
-  }
- 
+/* HERO SECTION */
+.hero {
+    background-image: linear-gradient(200deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../img/nate-watson-Ib_nblJ2Jis-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
 
- 
-  /* CONTACT SECTION */
-  .contact-section {
-    display: flex;
-    gap: 40px;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 64px 48px;
-    align-items: flex-start;
+.hero-txt{
+    
+    color: white;
+    align-items: center;
+    padding-top: 8.5%;
+    padding-left: 41.5%;
+    letter-spacing: 7px;
+    font-size: 100;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.hero-header p{
+    color: white;
+    align-items: center;
+    padding-top: 2%;
+    padding-left: 15%;
+    letter-spacing: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
   }
- 
-  .contact-form {
-    flex: 1.3;
-    background: #fff;
-    border: 1px solid #ececec;
-    border-radius: 12px;
-    padding: 32px;
-  }
- 
-  .contact-form h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #1a1a1a;
-  }
- 
-  .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-bottom: 16px;
-  }
- 
-  .form-group {
-    margin-bottom: 16px;
-  }
- 
-  .form-group label {
-    display: block;
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 6px;
-    color: #333;
-  }
- 
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-    font-family: inherit;
-  }
- 
-  .form-group textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
- 
-  .submit-btn {
-    background: #000000;
-    color: #fff;
-    border: none;
-    padding: 12px 28px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-  }
- 
-  .contact-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
- 
-  .detail-card {
-    background: #fff;
-    border: 1px solid #ececec;
-    border-radius: 12px;
-    padding: 24px;
-  }
- 
-  .detail-card h4 {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #1a1a1a;
-  }
- 
-  .detail-card p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.6;
-  }
- 
-  .whatsapp-btn {
-    display: inline-block;
-    margin-top: 12px;
-    background: #000000;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 18px;
-    border-radius: 30px;
-    font-size: 13px;
-    font-weight: 500;
-  }
- 
-  /* MOBILE */
-  @media (max-width: 768px) {
-    .navbar {
-      padding: 16px 20px;
-    }
-    .nav-links {
-      display: none;
-    }
-    .hero-overlay h1 {
-      font-size: 28px;
-    }
-    .contact-section {
-      flex-direction: column;
-      padding: 40px 20px;
-    }
-    .form-row {
-      grid-template-columns: 1fr;
-    }
-  }
+/* ENDS HERE */
 
 
 
@@ -298,3 +160,122 @@ body{
         }
 
 /* ENDS HERE */
+
+
+/* ========== Large Tablets ========== */
+@media (max-width: 992px){
+
+    .container{
+        width: 95%;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-content,
+    .hero-image{
+        width: 100%;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    nav ul{
+        gap: 15px;
+    }
+}
+
+/* ========== Tablets ========== */
+@media (max-width: 768px){
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.6rem;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .section{
+        padding: 60px 20px;
+    }
+
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ========== Mobile Phones ========== */
+@media (max-width: 480px){
+
+    .container{
+        width: 92%;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
+
+    h3{
+        font-size: 1.1rem;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero{
+        padding: 50px 0;
+    }
+
+    .card{
+        padding: 18px;
+    }
+
+    input,
+    textarea,
+    button{
+        width: 100%;
+    }
+
+    footer{
+        text-align: center;
+    }
+}
