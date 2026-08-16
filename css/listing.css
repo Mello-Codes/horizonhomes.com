@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -137,6 +141,7 @@
   align-items: flex-start;
 } 
 
+
 .filter-sidebar {
   width: 240px;
   flex-shrink: 0;
@@ -145,10 +150,10 @@
   border-radius: 8px;
   padding: 0px;
   position: sticky;
-  position: absolute;
-  left: 0;
-  top: 60%;
+    top: 90px;      /* stays visible while scrolling */
+    align-self: flex-start;
 }
+
 
 .filter-sidebar h3 {
   margin: 0 0 16px;
@@ -190,9 +195,8 @@
   flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 50px;
-  position: absolute;
-  right: 11%;
+  gap: 32px;
+  position: static;   /* remove absolute positioning */
   padding: 16px;
 }
 
@@ -317,131 +321,4 @@
 
 
 
-/* Mobile: sidebar becomes full-width and stacks above the grid */
-@media (max-width: 768px) {
-  .listings-page {
-    flex-direction: column;
-  }
-  .filter-sidebar {
-    width: 100%;
-    position: static;
-  }
-}
 
-/* ========== Large Tablets ========== */
-@media (max-width: 992px){
-
-    .container{
-        width: 95%;
-    }
-
-    .hero{
-        flex-direction: column;
-        text-align: center;
-        gap: 2rem;
-    }
-
-    .hero-content,
-    .hero-image{
-        width: 100%;
-    }
-
-    .grid{
-        grid-template-columns: repeat(2,1fr);
-        gap: 20px;
-    }
-
-    nav ul{
-        gap: 15px;
-    }
-}
-
-/* ========== Tablets ========== */
-@media (max-width: 768px){
-
-    h1{
-        font-size: 2rem;
-    }
-
-    h2{
-        font-size: 1.6rem;
-    }
-
-    p{
-        font-size: 15px;
-    }
-
-    nav{
-        flex-direction: column;
-        align-items: center;
-        padding: 15px 0;
-    }
-
-    nav ul{
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        gap: 12px;
-        margin-top: 15px;
-    }
-
-    .grid{
-        grid-template-columns: 1fr;
-    }
-
-    .cards{
-        grid-template-columns: 1fr;
-    }
-
-    .section{
-        padding: 60px 20px;
-    }
-
-    .btn{
-        width: 100%;
-        text-align: center;
-    }
-}
-
-/* ========== Mobile Phones ========== */
-@media (max-width: 480px){
-
-    .container{
-        width: 92%;
-    }
-
-    h1{
-        font-size: 1.7rem;
-    }
-
-    h2{
-        font-size: 1.3rem;
-    }
-
-    h3{
-        font-size: 1.1rem;
-    }
-
-    p{
-        font-size: 14px;
-        line-height: 1.7;
-    }
-
-    .hero{
-        padding: 50px 0;
-    }
-
-    .card{
-        padding: 18px;
-    }
-
-    input,
-    textarea,
-    button{
-        width: 100%;
-    }
-
-    footer{
-        text-align: center;
-    }
-}
