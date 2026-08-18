@@ -1,3 +1,5 @@
+
+
 // PRICE SLIDER
 
 const priceSlider = document.getElementById('price');

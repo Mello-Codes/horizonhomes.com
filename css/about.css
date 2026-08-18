@@ -60,7 +60,7 @@ html {
     justify-content: space-around;
     align-items: center;
     padding: 35px;
-    position: sticky;
+    position: relative;
     top: 0;
 
 }

@@ -144,14 +144,16 @@ html {
 
 .filter-sidebar {
   width: 240px;
+  margin-left: 0;
   flex-shrink: 0;
   background: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   padding: 0px;
   position: sticky;
-    top: 90px;      /* stays visible while scrolling */
-    align-self: flex-start;
+    top: 90px; 
+    left: 0;
+   
 }
 
 
@@ -277,8 +279,9 @@ html {
   margin: 0 12px;
   color: #1a1a1a;
 }
-
 /* ENDS HERE */
+
+
 /* SIDE BAR LGA OPTION */
 #lga-group {
   margin-top: 12px; /* adjust this number to taste */
