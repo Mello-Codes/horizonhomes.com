@@ -3,9 +3,11 @@
     padding: 0;
 }
 
-html {
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     scroll-behavior: smooth;
 }
+
 
 .navbar {
     display: flex;
@@ -132,11 +134,12 @@ html {
 }
 /* ENDS HERE */
 
+/* SIDE BAR  */
 .listings-page {
   display: flex;
   gap: 24px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   padding: 24px 16px;
   align-items: flex-start;
 } 
@@ -149,9 +152,9 @@ html {
   background: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
-  padding: 0px;
+  padding-bottom: 40%;
   position: sticky;
-    top: 90px; 
+    top: 0%; 
     left: 0;
    
 }
@@ -192,38 +195,28 @@ html {
   cursor: pointer;
   font-size: 14px;
 }
+/* ENDS HERE */
 
+
+/* PROPERTY GRID */
 .listings-grid {
-  flex: 1;
+ 
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 32px;
   position: static;   /* remove absolute positioning */
   padding: 16px;
+  width: 100%;
+  margin: auto;
 }
 
-.price-row {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-#price-output {
-  font-size: 13px;
-  font-weight: 500;
-  color: #1a1a1a;
-}
-
-
-
-/* PROPERTY GRID */
 .property-card {
   background: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 12px;
   overflow: hidden;
   padding-bottom: 30px;
-  width: 3;
+  width: 1;
 }
 
 .card-image {

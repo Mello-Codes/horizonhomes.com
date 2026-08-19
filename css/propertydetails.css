@@ -1,0 +1,410 @@
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  body {
+    background: #fafafa;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 48px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1a1a1a;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+  }
+
+  .nav-links a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .find-property-btn {
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  /* GALLERY */
+  .gallery {
+    max-width: 1100px;
+    margin: 32px auto 0;
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 380px;
+  }
+
+  .gallery .main-photo {
+    grid-row: 1 / 3;
+    background: #ddd;
+    border-radius: 12px;
+  }
+
+  .gallery .thumb {
+    background: #e2e2e2;
+    border-radius: 12px;
+  }
+
+  /* PROPERTY HEADER */
+  .property-header {
+    max-width: 1100px;
+    margin: 32px auto 0;
+    padding: 0 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+  .tag-rent {
+    background: #e6f4ea;
+    color: #1e7a3c;
+  }
+
+  .tag-sale {
+    background: #e6edfb;
+    color: #1a4fd6;
+  }
+
+  .property-header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+  }
+
+  .property-header .location {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .property-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: right;
+  }
+
+  .property-price span {
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  /* KEY DETAILS ROW */
+  .key-details {
+    max-width: 1100px;
+    margin: 24px auto 0;
+    padding: 20px 48px;
+    display: flex;
+    gap: 40px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .key-detail {
+    text-align: center;
+  }
+
+  .key-detail .value {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+
+  .key-detail .label {
+    font-size: 12px;
+    color: #666;
+    margin-top: 2px;
+  }
+
+  /* MAIN CONTENT LAYOUT */
+  .content-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 48px 64px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .main-col h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 14px;
+  }
+
+  .description-block {
+    margin-bottom: 40px;
+  }
+
+  .description-block p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 14px;
+  }
+
+  .amenities-block {
+    margin-bottom: 40px;
+  }
+
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .amenity-item {
+    font-size: 14px;
+    color: #333;
+    padding: 10px 14px;
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+  }
+
+  .neighborhood-block p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 16px;
+  }
+
+  .map-placeholder {
+    height: 200px;
+    background: #e2e2e2;
+    border-radius: 12px;
+  }
+
+  /* SIDEBAR AGENT CARD */
+  .agent-card {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 12px;
+    padding: 24px;
+    position: sticky;
+    top: 24px;
+  }
+
+  .agent-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .agent-avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #ddd;
+    flex-shrink: 0;
+  }
+
+  .agent-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+
+  .agent-role {
+    font-size: 12px;
+    color: #666;
+  }
+
+  .agent-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 14px;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: inherit;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .inquiry-btn {
+    width: 100%;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 4px;
+  }
+
+  .whatsapp-link {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #1a1a1a;
+    text-decoration: underline;
+  }
+
+  /* SIMILAR PROPERTIES */
+  .similar-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 48px 64px;
+  }
+
+  .similar-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+  }
+
+  .similar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .property-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 14px;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 140px;
+    background: #e2e2e2;
+  }
+
+  .property-card h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 12px 4px;
+    color: #1a1a1a;
+  }
+
+  .property-card .p-location {
+    font-size: 13px;
+    color: #555;
+    margin: 0 12px 6px;
+  }
+
+  .property-card .price {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 12px;
+    color: #1a1a1a;
+  }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 16px 20px;
+    }
+    .nav-links {
+      display: none;
+    }
+    .gallery {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      height: auto;
+      padding: 0 20px;
+    }
+    .gallery .main-photo {
+      grid-row: auto;
+      height: 220px;
+    }
+    .gallery .thumb {
+      height: 100px;
+    }
+    .property-header,
+    .key-details,
+    .content-layout,
+    .similar-section {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .content-layout {
+      grid-template-columns: 1fr;
+    }
+    .key-details {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .amenities-grid,
+    .similar-grid {
+      grid-template-columns: 1fr;
+    }
+    .property-price {
+      text-align: left;
+    }
+  }
